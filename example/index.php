@@ -16,8 +16,8 @@ require __DIR__.'/../vendor/autoload.php';
 
 $notifier = NotifierFactory::create();
 
-$notification = new Notification();
-$notification
+$notification =
+    (new Notification())
     ->setTitle('I\'m a notification title')
     ->setBody('And this is the body')
     ->setIcon(__DIR__.'/notification-icon.png')
